@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import {Modal, Button} from "react-bootstrap";
 import {withRouter} from "react-router";
 
-
-
 const data = [
     {
       id: 1,
@@ -63,7 +61,6 @@ const ProductListing = (props) => {
     }
   
    const handleShowDetail = (item) => {
-  
     localStorage.setItem("item",JSON.stringify(item));
      props.history.push('/productDetails')
     }
